@@ -40,5 +40,5 @@ jobs:
           platforms: linux/amd64, linux/arm64, linux/arm/v7
           push: true
           tags: |
-            ${{ env.GITHUB_REPOSITORY }}:latest
-            ${{ env.GITHUB_REPOSITORY }}:${{ env.GITHUB_RUN_NUMBER }}
+            ${{ github.repository_owner }}:latest
+            ${{ github.repository_owner }}:${{ github.run_number }}
